@@ -6,26 +6,25 @@ body {
   padding: 0;
   background: #9b9b9b;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 17px; /* було 14px, збільшено приблизно на 1.2 */
   color: #fff;
 }
 
-/* Контейнер для слайдера — обмежує ширину і центрує */
 .slider-container {
-  max-width: 900px; /* Максимальна ширина */
-  margin: 0 auto;   /* Центрування по горизонталі */
-  padding: 10px 0;  /* Відступ зверху і знизу */
+  max-width: 1080px; /* було 900px */
+  margin: 0 auto;
+  padding: 12px 0; /* було 10px 0 */
 }
 
 .swiper {
-  width: 90%;     /* Займає всю ширину контейнера */
-  height: auto;   /* Фіксована висота слайдера */
+  width: 100%;
+  height: auto;
 }
 
 .swiper-slide {
   border-radius: 50%;
-  width: 300px;   /* Фіксована ширина слайда */
-  height: 300px;  /* Висота слайда */
+  width: 360px; /* було 300px */
+  height: 360px; /* було 300px */
   background-position: center;
   background-size: cover;
 }
@@ -34,60 +33,85 @@ body {
   display: block;
   border-radius: 50%;
   width: 100%;
-  height: 100%; 
+  height: 100%;
   object-fit: cover;
 }
 
 .swiper-pagination {
-  position: relative;  
-  margin-top: 80px;
+  position: relative;
+  margin-top: 96px; /* було 80px */
   text-align: center;
 }
 
 .swiper-pagination-bullet {
-  width: 16px;
-  height: 16px;
+  width: 19px; /* було 16px */
+  height: 19px; /* було 16px */
   background: #fff;
   opacity: 0.6;
   transition: 0.3s;
 }
 
 .swiper-pagination-bullet-active {
-  background: #ff4081; /* активна кулька */
+  background: #ff4081;
   opacity: 1;
-  transform: scale(1.2); /* трохи збільшується */
+  transform: scale(1.2);
 }
+
 .slide-info {
   background-color: #ff4081;
-  border-radius: 15px;
-  width: 240px;
-  padding: 5px 0;
+  border-radius: 18px; /* було 15px */
+  width: 288px; /* було 240px */
+  padding: 6px 0 12px 0; /* було 5px 0 10px 0 */
   margin: 0 auto;
   position: relative;
-  bottom: 40px;
+  bottom: 48px; /* було 40px */
   opacity: 0;
   color: #fff;
   text-align: center;
   transition: opacity 0.5s ease;
 }
 
-/* Показуємо блок на активному слайді */
 .swiper-slide-active .slide-info {
   opacity: 1;
-  max-height: 100px;
+  max-height: 120px; /* було 100px */
 }
 
-/* Стилі для першого і другого label */
 .slide-info label:first-child {
   display: block;
-  font-size: 16px;  /* більший шрифт для першого */
+  font-size: 19px; /* було 16px */
   font-weight: bold;
   margin-bottom: 2px;
 }
 
 .slide-info label:last-child {
   display: block;
-  font-size: 12px;  /* менший шрифт для другого */
+  font-size: 14px; /* було 12px */
   font-weight: normal;
   opacity: 0.9;
+}
+
+.insta-icon {
+  position: absolute;
+  top: 258px; /* було 215px */
+  left: 156px; /* було 130px */
+  z-index: 2;
+  background: #ff4081;
+  padding: 10px; /* було 8px */
+  border-radius: 60%; /* залишив 50%, але можна підкоригувати, тут - 50% це круг */
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.3s ease;
+}
+
+.swiper-slide-active .insta-icon {
+  opacity: 1;
+}
+
+.insta-icon:hover {
+  transform: scale(1.1);
+}
+
+.insta-icon img {
+  width: 29px; /* було 24px */
+  height: 29px; /* було 24px */
+  display: block;
 }
