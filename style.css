@@ -52,13 +52,13 @@ body {
 }
 
 .swiper-pagination-bullet-active {
-  background: #ff4081;
+  background: #c341e0;
   opacity: 1;
   transform: scale(1.2);
 }
 
 .slide-info {
-  background-color: #ff4081;
+  background-color: #c341e0;
   border-radius: 18px; /* було 15px */
   width: 288px; /* було 240px */
   padding: 6px 0 12px 0; /* було 5px 0 10px 0 */
@@ -92,12 +92,12 @@ body {
 
 .insta-icon {
   position: absolute;
-  top: 258px; /* було 215px */
-  left: 156px; /* було 130px */
+  top: 258px; 
+  left: 156px; 
   z-index: 2;
-  background: #ff4081;
-  padding: 10px; /* було 8px */
-  border-radius: 60%; /* залишив 50%, але можна підкоригувати, тут - 50% це круг */
+  background: #c341e0;
+  padding: 10px; 
+  border-radius: 60%; 
   opacity: 0;
   transition: opacity 0.5s ease, transform 0.3s ease;
 }
