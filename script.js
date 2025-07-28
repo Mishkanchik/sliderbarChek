@@ -4,6 +4,11 @@ var swiper = new Swiper(".mySwiper", {
   centeredSlides: true,
   slidesPerView: "auto",
   loop: true,
+  speed: 1000,
+  autoplay: {
+    delay: 4000, 
+    disableOnInteraction: false,
+  },
   coverflowEffect: {
     rotate: 0,
     stretch: 10,
